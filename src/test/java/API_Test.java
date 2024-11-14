@@ -1,29 +1,18 @@
 import com.fasterxml.jackson.core.JsonProcessingException;
-import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import java.io.IOException;
-import java.net.URI;
-import java.nio.file.Files;
 import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.Map;
-
 import static Engine.ApiRequest.*;
 import static Util.Utility.returnDataPath;
-import static Util.Utility.jsonToString;
 
 public class API_Test {
 
     private String BASE_URL = "https://reqres.in";
 
-    @Test
-    public void testLogin(){
-
-    }
 
     @Test
     public void getRequest() {
@@ -68,7 +57,7 @@ public class API_Test {
     public void postRequestWithJsonFileBody() throws IOException {
 
         //get the json file directory
-        Path body = Path.of(returnDataPath("searchForProduct.json")); // Update this path
+        Path body = Path.of(returnDataPath("createUser.json")); // Update this path
 
 
         // Optionally, create headers (if needed)
@@ -92,7 +81,7 @@ public class API_Test {
     public void putRequestWithJsonFileBody() throws IOException {
 
         // get the json file
-        Path body = Path.of(returnDataPath("searchForProduct.json"));
+        Path body = Path.of(returnDataPath("createUser.json"));
 
         // Optionally, create headers (if needed)
         Map<String, String> headers = new HashMap<>();
