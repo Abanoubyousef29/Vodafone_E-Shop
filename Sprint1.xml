@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+
+    <!-- Chrome Normal Mode -->
+    <test name="Chrome Normal">
+        <parameter name="browserName" value="chrome"/>
+        <classes>
+            <class name="UI_Test">
+
+            </class>
+        </classes>
+    </test>
+
+</suite>

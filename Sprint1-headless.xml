@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+
+    <!-- Chrome Headless Mode -->
+    <test name="Chrome Headless">
+        <parameter name="browserName" value="chrome-headless"/>
+        <parameter name="enableRecording" value="false"/>
+        <classes>
+            <class name="UI_Test">
+
+            </class>
+        </classes>
+    </test>
+
+
+</suite>
