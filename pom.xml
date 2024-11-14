@@ -61,7 +61,7 @@
                     <version>${maven.surefire.plugin.version}</version>
                     <configuration>
                         <suiteXmlFiles>
-                            <suiteXmlFile>testng.xml</suiteXmlFile>
+                            <suiteXmlFile>testng-headless.xml</suiteXmlFile>
                         </suiteXmlFiles>
                         <testFailureIgnore>false</testFailureIgnore>
                         <systemPropertyVariables>
